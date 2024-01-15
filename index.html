@@ -1,16 +1,58 @@
-My Name Is Gourav
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .box {
+            width: 200px;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            margin: 0 auto;
+            background-color: lightgray;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .button.no {
+            color: rgb(19, 30, 126);
+            font-weight: bold;
+        }
+        .button.no:hover {
+            opacity: 0;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var yesButton = document.querySelector('.button.yes');
+            var noButton = document.querySelector('.button.no');
+            
+            yesButton.addEventListener('click', function() {
+                alert('Thanks for your time!');
+                window.location.href = "https://www.instagram.com/khatri_1997";
+            }); // Add closing brace here
+            
+            noButton.addEventListener('click', function() {
+                noButton.disabled = true;
+            });
+        });
+    </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</head>
+<body>
+    <div class="box">
+        <p>Do you love Gourav?</p>
+        <button class="button yes">Yes</button>
+        <button class="button no">No</button>
+    </div>
+</body>
+</html>
